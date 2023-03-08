@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="icon" href="https://bcw.blob.core.windows.net/public/img/9977764104160066">
+  <link rel="icon" href="https://img.pokemondb.net/sprites/legends-arceus/normal/rotom-frost.png">
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.1.96/css/materialdesignicons.min.css"
     integrity="sha512-NaaXI5f4rdmlThv3ZAVS44U9yNWJaUYWzPhvlg5SC7nMRvQYV9suauRK3gVbxh7qjE33ApTPD+hkOW78VSHyeg=="
@@ -19,21 +19,65 @@
   <header>
     <nav class="navbar navbar-dark navbar-expand bg-dark text-light no-select">
       <a class="navbar-brand ms-3" href="#">
-        <img src="https://codeworks.blob.core.windows.net/public/assets/img/cw-mark.png" height="45" alt=""
+        <img src="https://img.pokemondb.net/sprites/legends-arceus/normal/rotom-frost.png" height="45" alt=""
           loading="lazy">
         <span class="ms-2">Vendr</span>
       </a>
     </nav>
   </header>
+
   <main>
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <div id="app"></div>
+      <section class="row p-3">
+
+        <!-- STUB Vending Machine -->
+        <div class="col-8 bg-info">
+
+          <!-- SECTION Snacks -->
+          <section class="row p-3" id="snacks">
+            <!-- <div class="col-3 text-center elevation-5 bg-grey">
+              <img
+                src="https://www.caseys.com/medias/sys_master/images/h12/h27/8986511835166/2840016464_base-400x400/2840016464-base-400x400.png"
+                height="150" alt="">
+              <h3>Doritos</h3>
+              <h5>$<span>1.50</span></h5>
+            </div> -->
+          </section>
         </div>
-      </div>
+
+        <div class="col-4 p-4 elevation-3 bg-danger vendingSide">
+          <!-- STUB Money Area -->
+          <div class="border border-dark p-2 moneySide d-flex flex-column justify-content-between bg-grey">
+            <div class="text-center">
+              <h4>Money:</h4>
+              <h1 class="bg-dark text-success">$<span id="money">0.00</span></h1>
+            </div>
+            <div class="p-3 text-center">
+              <button class="btn btn-success" onclick="app.moneyController.increaseMoney()">+ $0.25</button>
+            </div>
+          </div>
+
+          <!-- STUB MySnacks -->
+          <h1 class="text-center text-light bg-dark p-1 mt-2"><u class="text-light">My Snacks</u></h1>
+
+          <section class="row p-3" id="snacks">
+
+            <div class="col-4">
+              <div class="text-center elevation-5 bg-grey p-2">
+                <img
+                  src="https://www.caseys.com/medias/sys_master/images/h12/h27/8986511835166/2840016464_base-400x400/2840016464-base-400x400.png"
+                  height="100" alt="">
+                <h5>${this.name}</h5>
+                <p>$<span>${this.price}</span></p>
+              </div>
+            </div>
+
+          </section>
+        </div>
+      </section>
     </div>
   </main>
+
   <footer class="bg-dark text-light">
     <div class="text-center no-select">
       <p><small>Made with 💖 by CodeWorks</small></p>

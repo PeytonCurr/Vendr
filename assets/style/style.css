@@ -1,1 +1,9 @@
 /* BASIC STYLES HERE */
+
+.vendingSide {
+    min-height: 80vh;
+}
+
+.moneySide {
+    min-height: 30%;
+}
